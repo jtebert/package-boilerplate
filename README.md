@@ -16,18 +16,21 @@ This installs the fishlib package locally (like pip) so it can be used anywhere.
 
 After installation you can used it like this
 
-### Import the main package utils:
+### Import the main package utils
 
 - `from fishlib import utils` -> `utils.set_color('blue')` (creates ambiguity)
 - `import fishlib.utils` -> `fishlib.utils.set_color('blue')`
 - `import fishlib.utils as fish_utils` -> `fish_utils.set_color('blue')`
 
-### Import a subpackage:
+### Import a subpackage
 
 - `from fishlib import movement` -> `movement.utils.move('left')`, `movement.move_left()`
   (This is what I usually do)
 - `import fishlib.movement` -> `fishlib.movement.utils.move('left')`, `fishlib.movement.move_left()`
 
+### What you can't do
+
+`import fishlib`
 
 ## Best practice
 
